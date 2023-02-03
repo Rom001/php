@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script>
+        document.getElementById('video').play();
+    </script>
+</head>
+
+<body>
+    <form action="TD2.php" method="post">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            <div>
+                <label for="first_name">Prénom :</label>
+                <input type="text" id="first_name" name="user_first_name" required>
+            </div>
+            <div>
+                <label for="M">Civilité : M</label>
+                <input type="radio" id="M" name="Civilité" value="M" checked>
+
+                <label for="Mlle">Mlle</label>
+                <input type="radio" id="Mlle" name="Civilité" value="Mlle">
+
+                <label for="Mme">Mme</label>
+                <input type="radio" id="Mme" name="Civilité" value="Mme">
+            </div>
+            <div>
+                <label for="niv-etude-select">Niveau d'étude :</label>
+
+                <select name="niv-etude" id="niv-etude-select">
+                    <option value="licence">Licence</option>
+                    <option value="master">Master</option>
+                    <option value="doctorat">Doctorat</option>
+                </select>
+            </div>
+            <div>
+                <label for="mail">e-mail :</label>
+                <input type="email" placeholder="exemple@gmail.com" id="mail" name="user_mail" required>
+            </div>
+            <div>
+                <label for="mot_de_passe">Mot de passe :</label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+            </div>
+            <div>
+                <label for="confirmation_de_mot_de_passe">Confirmation de mot de passe :</label>
+                <input type="password" id="confirmation_de_mot_de_passe" name="confirmation_de_mot_de_passe" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informations de contact</legend>
+            <div>
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="user_adresse" required>
+            </div>
+            <div>
+                <label for="ville">Ville :</label>
+                <input type="text" placeholder="Paris" id="ville" name="user_ville" required>
+            </div>
+            <div>
+                <label for="code_postal">Code postal :</label>
+                <input type="text" id="code_postal" name="user_code_postal" required>
+            </div>
+            <div>
+                <label for="pays">Pays :</label>
+                <input type="text" placeholder="France" id="pays" name="user_pays" required>
+            </div>
+            <div>
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+            </div>
+            <div>
+                <label for="avatar">Charger votre photo :</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required>
+            </div>
+        </fieldset>
+        <div>
+            <button class="buttonGreen" type="submit">Validée</button>
+            <button class="buttonRed" type="reset">Réinitialiser</button>
+        </div>
+    </form>
+
+    </br>
+    </br>
+    </br>
+    </br>
+
+    <table>
+        <tr>
+            <td colspan="2">Colonnes 1 et 2 fusionnées</td>
+            <td>Colonnes 3</td>
+            <td colspan="2">Colonnes 4 et 5 fusionnées</td>
+        </tr>
+        <tr>
+            <td>Colonnes 1</td>
+            <td>Colonnes 2</td>
+            <td>Colonnes 3</td>
+            <td>Colonnes 4</td>
+            <td>Colonnes 5</td>
+        </tr>
+        <tr>
+            <td>Colonnes 1</td>
+            <td colspan="3">Colonnes 2, 3 et 4 fusionnées</td>
+            <td>Colonnes 5</td>
+        </tr>
+    </table>
+    <div>
+        <!-- Simple lecture audio -->
+        <audio controls loop>
+            <source src="musique.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div>
+        <video width="320" height="240" controls autoplay muted id="video">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div>
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="600" height="500"
+            src="https://rom001.github.io/ndi-2022/">
+        </iframe>
+    </div>
+</body>
+
+</html>

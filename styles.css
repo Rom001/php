@@ -1,0 +1,51 @@
+body{
+    padding-bottom: 50px;
+
+}
+
+
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+input {
+    margin: 0.4rem;
+}
+
+fieldset {
+    width : 50%;
+    }
+
+.buttonGreen {
+        background-color: #11db3c; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+.buttonRed {
+        background-color: #db1111; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+table, th, td{
+
+        border: 2px solid rgb(156, 165, 169);
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 18px;
+        text-align: center;
+    }
